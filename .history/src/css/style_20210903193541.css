@@ -1,0 +1,270 @@
+@import "/src/css/normalize.css";
+
+:root {
+    --Verydarkcyan: hsl(183, 100%, 15%);
+    --Darkgrayishcyan: hsl(186, 14%, 43%);
+    --darkgrayishcyan: hsl(184, 14%, 56%);
+    --SweetGreen: #26C2AD;
+    --lightgrayishcyan: hsl(185, 41%, 84%);
+    --Lightgrayishcyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+    --fSize: 24px;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    color: var(--Darkgrayishcyan);
+    background-color: var(--lightgrayishcyan);
+}
+
+.splitter {
+    margin: 10% 0;
+}
+
+.splitter > h2 {
+    color: var(--Verydarkcyan);
+    letter-spacing: 0.7rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    background-color: var(--White);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+}
+
+.billArea {
+    width: 85%;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.billArea > h4 {
+    margin: 10px 0;
+}
+
+.billValue {
+    background-color: var(--Lightgrayishcyan);
+    color: var(--darkgrayishcyan);
+    font-size: var(--fSize);
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.billValue > span {
+    float: right;
+    font-weight: 700;
+    color: var(--Verydarkcyan);
+}
+
+.tipArea {
+    width: 85%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.btnsBox {
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tipBtn {
+    background-color: var(--Verydarkcyan);
+    color: var(--White);
+    font-size: var(--fSize);
+    font-weight: 700;
+    line-height: 2;
+    width: 48%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tipBtn:active {
+    background-color: var(--SweetGreen);
+    color: var(--Verydarkcyan);
+}
+
+.btnsBox :last-child {
+    background-color: var(--Lightgrayishcyan);
+    color:var(--Darkgrayishcyan);
+}
+
+.btnsBox :last-child:active {
+    background-color: var(--Lightgrayishcyan);
+    color: var(--Verydarkcyan);
+}
+
+/* .btnsBox > a:hover {
+    background-color: var(--SweetGreen);
+    color: var(--Verydarkcyan);
+} */
+
+
+.peopleArea {
+    width: 85%;
+    margin: auto;
+    padding-top: 15px;
+}
+
+.peopleArea >h4 {
+    margin-bottom: 10px;
+}
+
+.people {
+    background-color: var(--Lightgrayishcyan);
+    color: var(--Verydarkcyan);
+    font-size: var(--fSize);
+    font-weight: 700;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: right;
+}
+
+.icon-user {
+    float: left;
+    color: var(--darkgrayishcyan);
+    font-size: 18px;
+}
+
+.resoultArea {
+    width: 90%;
+    height: auto;
+    margin: 20px 0 70px 0;
+    background-color: var(--Verydarkcyan);
+    border-radius: 15px;
+    padding-bottom: 10px;
+}
+
+.amount {
+    padding: 20px;
+}
+
+.amount > h4 {
+    color: var(--White);
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.prsn {
+    display: block;
+    font-size: 13px;
+    line-height: 2;
+    color: var(--darkgrayishcyan);
+}
+
+.cashBox {
+    display: inline-block;
+    float: right;
+    margin-top: 20px;
+}
+
+.price {
+    font-size: 33px;
+    font-weight: 700;
+    float: right;
+    margin: auto 0;
+    color: var(--SweetGreen);
+}
+
+.total {
+    padding: 0 20px;
+}
+
+.total > h4 {
+    color: var(--White);
+    display: inline-block;
+}
+
+.reset {
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--Verydarkcyan);
+    background-color: var(--SweetGreen);
+    width: 85%;
+    margin: 0 auto 15px auto;
+    padding: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 1290px) {
+    .splitter {
+        margin: 80px 0 50px 0;
+    }
+    .card {
+        width: 60%;
+        height: 460px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        border-radius: 20px;
+    }
+
+    .whiteBox {
+        width: 50%;
+        height: 100%;
+    }
+
+    .darkBox {
+        width: 50%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .billArea {
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    .tipArea {
+        margin-top: 30px;
+    }
+
+    .btnsBox {
+        height: auto;
+    }
+
+    .tipBtn {
+        width: 30%;
+        margin: 10px 0;
+    }
+
+    .peopleArea {
+        margin-top: 30px;
+    }
+
+    .peopleArea > h4 {
+        margin: 0;
+    }
+
+    .darkBox {
+        width: 50%;
+        height: 100%;
+    }
+
+    .resoultArea {
+        /* display: none; */
+        /* width: 50%; */
+        pos
+        height: 90%;
+        /* max-width: 50%; */
+        /* box-sizing: border-box; */
+        margin: 0 auto;
+        padding: 0;
+        /* border: 10px solid transparent; */
+    }
+
+    }

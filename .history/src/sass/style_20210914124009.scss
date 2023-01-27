@@ -1,0 +1,101 @@
+@import "/src/css/normalize.css";
+@import "variables";
+@import "base";
+@import "splitter";
+@import "card";
+
+
+
+@media only screen and (min-width: 1290px) {
+
+    .whiteBox {
+        width: 50%;
+        height: 100%;
+    }
+
+    .darkBox {
+        width: 50%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .billArea {
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    .billValue:hover {
+        cursor: pointer;
+        border: 3px solid $SweetGreen;
+        margin: -2px;
+    }
+
+    .billValue:active {
+        border: 3px solid $SweetGreen;
+        margin: -2px;
+    }
+
+    .tipArea {
+        margin-top: 30px;
+    }
+
+    .btnsBox {
+        height: auto;
+
+        a:hover {
+            cursor: pointer;
+            background-color: $lightgrayishcyan;
+            color: $Verydarkcyan;
+        }
+
+        a:active {
+            background-color: $SweetGreen;
+        }
+
+        a:last-child:hover {
+            border: 3px solid $SweetGreen;
+            margin: 7px -2px;
+        }
+    }
+
+    .tipBtn {
+        width: 30%;
+        margin: 10px 0;
+    }
+
+    .peopleArea {
+        margin-top: 30px;
+
+        h4 {
+            margin: 0;
+        }
+    }
+
+    .resoultArea {
+        height: 90%;
+        margin: 5% auto;
+        padding: 0;
+        position: relative;
+    }
+
+    .amount, .total {
+        width: 80%;
+        margin: auto;
+    }
+
+    .reset {
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 30px;
+
+    }
+
+    .reset:hover {
+        cursor: pointer;
+        background-color: $lightgrayishcyan;
+    }
+
+}

@@ -1,0 +1,285 @@
+@import "/src/css/normalize.css";
+@import "variables";
+@import "base";
+
+.splitter {
+    margin: 10% 0;
+
+    h2 {
+        color: $Verydarkcyan;
+        letter-spacing: 0.7rem;
+        line-height: 1.5;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.card {
+    background-color: $White;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+}
+
+.billArea {
+    width: 85%;
+    margin: auto;
+    padding-top: 10px;
+
+    h4 {
+        margin: 10px 0;
+    }
+}
+
+.billValue {
+    background-color: $Lightgrayishcyan;
+    color: $darkgrayishcyan;
+    font-size: $fSize;
+    padding: 10px 15px;
+    border-radius: 5px;
+
+    span {
+        float: right;
+        font-weight: 700;
+        color: $Verydarkcyan;
+    }
+}
+
+.tipArea {
+    width: 85%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.btnsBox {
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tipBtn {
+    background-color: $Verydarkcyan;
+    color: $White;
+    font-size: $fSize;
+    font-weight: 700;
+    line-height: 2;
+    width: 48%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tipBtn:active {
+    background-color: $SweetGreen;
+    color: $Verydarkcyan;
+}
+
+.btnsBox :last-child {
+    background-color: $Lightgrayishcyan;
+    color:$Darkgrayishcyan;
+}
+
+.btnsBox :last-child:active {
+    background-color: $Lightgrayishcyan;
+    color: $Verydarkcyan;
+}
+
+
+.peopleArea {
+    width: 85%;
+    margin: auto;
+    padding-top: 15px;
+
+    h4 {
+        margin-bottom: 10px;
+    }
+}
+
+.people {
+    background-color: $Lightgrayishcyan;
+    color: $Verydarkcyan;
+    font-size: $fSize;
+    font-weight: 700;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: right;
+}
+
+.icon-user {
+    float: left;
+    color: $darkgrayishcyan;
+    font-size: 18px;
+}
+
+.resoultArea {
+    width: 90%;
+    height: auto;
+    margin: 20px auto 70px auto;
+    background-color: $Verydarkcyan;
+    border-radius: 15px;
+    padding-bottom: 10px;
+}
+
+.amount {
+    padding: 20px;
+
+    h4 {
+        color: $White;
+        display: inline-block;
+        margin-bottom: 0;
+    }
+}
+
+.prsn {
+    display: block;
+    font-size: 13px;
+    line-height: 2;
+    color: $darkgrayishcyan;
+}
+
+.cashBox {
+    display: inline-block;
+    float: right;
+    margin-top: 20px;
+}
+
+.price {
+    font-size: 33px;
+    font-weight: 700;
+    float: right;
+    margin: auto 0;
+    color: $SweetGreen;
+}
+
+.total {
+    padding: 0 20px;
+
+    h4 {
+        color: $White;
+        display: inline-block;
+    }
+}
+
+.reset {
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $Verydarkcyan;
+    background-color: $SweetGreen;
+    width: 85%;
+    margin: 0 auto 15px auto;
+    padding: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 1290px) {
+    .splitter {
+        margin: 80px 0 50px 0;
+    }
+    .card {
+        width: 60%;
+        height: 460px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        border-radius: 20px;
+    }
+
+    .whiteBox {
+        width: 50%;
+        height: 100%;
+    }
+
+    .darkBox {
+        width: 50%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .billArea {
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    .billValue:hover {
+        cursor: pointer;
+        border: 3px solid $SweetGreen;
+        margin: -2px;
+    }
+
+    .billValue:active {
+        border: 3px solid $SweetGreen;
+        margin: -2px;
+    }
+
+    .tipArea {
+        margin-top: 30px;
+    }
+
+    .btnsBox {
+        height: auto;
+
+        a:hover {
+            cursor: pointer;
+            background-color: $lightgrayishcyan;
+            color: $Verydarkcyan;
+        }
+
+        a:active {
+            background-color: $SweetGreen;
+        }
+
+        a:last-child:hover {
+            border: 3px solid $SweetGreen;
+            margin: 7px -2px;
+        }
+    }
+
+    .tipBtn {
+        width: 30%;
+        margin: 10px 0;
+    }
+
+    .peopleArea {
+        margin-top: 30px;
+
+        h4 {
+            margin: 0;
+        }
+    }
+
+    .resoultArea {
+        height: 90%;
+        margin: 5% auto;
+        padding: 0;
+        position: relative;
+    }
+
+    .amount, .total {
+        width: 80%;
+        margin: auto;
+    }
+
+    .reset {
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 30px;
+
+    }
+
+    .reset:hover {
+        cursor: pointer;
+        background-color: $lightgrayishcyan;
+    }
+
+}

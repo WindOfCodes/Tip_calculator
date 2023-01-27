@@ -1,0 +1,15 @@
+.splitter {
+    margin: 10% 0;
+
+    h2 {
+        color: $Verydarkcyan;
+        letter-spacing: 0.7rem;
+        line-height: 1.5;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 1290px)

@@ -1,0 +1,376 @@
+
+.card {
+    background-color: $White;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+}
+
+.billArea {
+    width: 85%;
+    margin: auto;
+    padding-top: 10px;
+
+    h4 {
+        margin: 10px 0;
+    }
+}
+
+.billValue {
+    background-color: $Lightgrayishcyan;
+    color: $darkgrayishcyan;
+    font-size: $fSize;
+    padding: 0 15px;
+    border-radius: 5px;
+
+    input {
+        font-weight: 700;
+        color: $Verydarkcyan;
+        background-color: $Lightgrayishcyan;
+        font-size: $fSize;
+        width: 94%;
+        line-height: 1.7;
+        padding: 0;
+        border: none;
+        text-align: right;
+    }
+
+    input::-webkit-inner-spin-button,
+    input::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input:active::-webkit-inner-spin-button,
+    input:active::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+}
+
+.tipArea {
+    width: 85%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.btnsBox {
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+
+    #btnTip {
+        opacity: 0;
+        position: fixed;
+        width: 0;
+    }
+
+    #btnTip
+
+    label {
+        display: block;
+        background-color: $Verydarkcyan;
+        color: $White;
+        font-size: $fSize;
+        font-weight: 700;
+        line-height: 2;
+        width: 48%;
+        text-align: center;
+        border-radius: 5px;
+    }
+}
+
+
+// .tipBtn:active {
+//     background-color: $SweetGreen;
+//     color: $Verydarkcyan;
+// }
+
+#tipInput {
+    background-color: $Lightgrayishcyan;
+    color:$Darkgrayishcyan;
+    box-sizing: border-box;
+    border: solid 2px transparent;
+    border-radius: 5px;
+    text-align: center;
+    font-size: $fSize;
+    font-weight: 700;
+    width: 48%;
+}
+
+#tipInput:focus {
+    border: solid 2px $SweetGreen;
+}
+
+#tipInput::-webkit-inner-spin-button,
+#tipInput::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#tipInput:active::-webkit-inner-spin-button,
+#tipInput:active::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#tipInput[type=number] {
+    -moz-appearance: textfield;
+}
+
+#tipInput[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+.peopleArea {
+    width: 85%;
+    margin: auto;
+    padding-top: 15px;
+
+    h4 {
+        margin-bottom: 10px;
+    }
+}
+
+.people {
+    background-color: $Lightgrayishcyan;
+    color: $Verydarkcyan;
+    font-size: $fSize;
+    font-weight: 700;
+    padding: 0px 15px;
+    border-radius: 5px;
+    text-align: right;
+
+    i {
+        line-height: 2.3;
+    }
+
+    input {
+        color: $Verydarkcyan;
+        font-weight: 700;
+        padding: 0;
+        background-color: $Lightgrayishcyan;
+        font-size: $fSize;
+        width: 90%;
+        line-height: 1.7;
+        padding: 0;
+        border: none;
+        text-align: right;
+    }
+
+    input::-webkit-inner-spin-button,
+    input::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input:active::-webkit-inner-spin-button,
+    input:active::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+}
+
+.people:hover {
+    cursor: pointer;
+    border: 3px solid $SweetGreen;
+    margin: -2px;
+}
+
+.icon-user {
+    float: left;
+    color: $darkgrayishcyan;
+    font-size: 18px;
+}
+
+.resoultArea {
+    width: 90%;
+    height: auto;
+    margin: 20px auto 70px auto;
+    background-color: $Verydarkcyan;
+    border-radius: 15px;
+    padding-bottom: 10px;
+}
+
+.amount {
+    padding: 20px;
+
+    h4 {
+        color: $White;
+        display: inline-block;
+        margin-bottom: 0;
+    }
+}
+
+.prsn {
+    display: block;
+    font-size: 13px;
+    line-height: 2;
+    color: $darkgrayishcyan;
+}
+
+.cashBox {
+    display: inline-block;
+    float: right;
+    margin-top: 20px;
+}
+
+.price {
+    font-size: 33px;
+    font-weight: 700;
+    float: right;
+    margin: auto 0;
+    color: $SweetGreen;
+}
+
+.total {
+    padding: 0 20px;
+
+    h4 {
+        color: $White;
+        display: inline-block;
+    }
+}
+
+.reset {
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $Verydarkcyan;
+    background-color: $SweetGreen;
+    width: 85%;
+    margin: 0 auto 15px auto;
+    padding: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 1290px) {
+
+    .card {
+        width: 60%;
+        height: 460px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        border-radius: 20px;
+    }
+
+    .whiteBox {
+        width: 50%;
+        height: 100%;
+    }
+
+    .darkBox {
+        width: 50%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .billArea {
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    .billValue:hover {
+        cursor: pointer;
+        border: 3px solid $SweetGreen;
+        margin: -2px;
+    }
+
+    .billValue:active {
+        border: 3px solid $SweetGreen;
+        margin: -2px;
+    }
+
+    .tipArea {
+        margin-top: 30px;
+    }
+
+    .btnsBox {
+        height: auto;
+
+        label {
+            width: 30%;
+            margin: 10px 0;
+        }
+
+        label:hover {
+            cursor: pointer;
+            background-color: $lightgrayishcyan;
+            color: $Verydarkcyan;
+        }
+
+        label:active {
+            background-color: $SweetGreen;
+        }
+
+        label:last-child:hover {
+            border: 3px solid $SweetGreen;
+            margin: 7px -2px;
+        }
+
+        #tipInput {
+            width: 30%;
+        }
+
+    }
+
+    input:focus {
+        outline: solid 0px transparent;
+    }
+
+    .tipBtn {
+        width: 30%;
+        margin: 10px 0;
+    }
+
+    .resoultArea {
+        height: 90%;
+        margin: 5% auto;
+        padding: 0;
+        position: relative;
+    }
+
+    .amount, .total {
+        width: 80%;
+        margin: auto;
+    }
+
+    .reset {
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 30px;
+
+    }
+
+    .reset:hover {
+        cursor: pointer;
+        background-color: $lightgrayishcyan;
+    }
+}
